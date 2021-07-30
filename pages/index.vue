@@ -25,13 +25,14 @@
           Currently Working
         </div>
       </div>
-      <div class="mt-10 w-4/6 mx-auto shadow-card">
+      <!-- WORKS -->
+      <div class="mt-10 w-4/6 mx-auto shadow-card border-2 border-white border-opacity-10 rounded-3xl">
         <div class="border-24 border-onSurface rounded-t-3xl rounded-b-none">
           <div class="bg-onSurface">
             <img class="rounded-3xl object-cover w-full" src="../assets/img/hero-banner.png" alt="hero banner">
           </div>
         </div>
-        <div class="bg-gray-900 p-6 rounded-b-3xl">
+        <div class="p-6 rounded-b-3xl">
           <div class="grid grid-cols-12">
             <div class="col-span-8">
               <div class="grid gap-3 place-content-between h-60">
@@ -82,13 +83,13 @@
       </div>
       <div class="mt-12 px-3 md:px-16">
         <div class="grid grid-cols-3 gap-6">
-          <div v-for="i in 3" :key="i">
+          <div v-for="i in 3" :key="i" class="border-2 border-white border-opacity-10 rounded-3xl">
             <div class="border-12 border-onSurface rounded-t-3xl rounded-b-none">
               <div class="bg-onSurface">
                 <img class="rounded-3xl object-cover w-full" src="../assets/img/somoy.png" alt="somoy image">
               </div>
             </div>
-            <div class="bg-gray-900 p-6 rounded-b-3xl">
+            <div class="p-6 rounded-b-3xl">
               <div class="text-button text-secondary mb-3">
                 Website
               </div>
@@ -105,8 +106,9 @@
           </div>
         </div>
       </div>
+      <!-- BLOGS -->
       <div class="mt-12 px-3 md:px-16">
-        <div class="grid grid-cols-12">
+        <div class="grid grid-cols-12 border-2 border-white border-opacity-10 rounded-3xl">
           <div class="col-span-5">
             <div class="border-12 border-onSurface rounded-l-3xl rounded-b-none">
               <div class="bg-onSurface">
@@ -115,7 +117,7 @@
             </div>
           </div>
           <div class="col-span-7">
-            <div class="bg-gray-900 p-6 rounded-r-3xl h-full">
+            <div class="p-6 rounded-r-3xl h-full">
               <div class="grid place-content-between h-full">
                 <div>
                   <div class="text-button text-secondary mb-3">
@@ -136,6 +138,7 @@
           </div>
         </div>
       </div>
+      <!-- KIND WORDS -->
       <div class="mt-12 px-3 md:px-16">
         <div class="masonry before:box-inherit after:box-inherit">
           <div v-for="item in items" :key="item">
@@ -156,6 +159,67 @@
               <div class="text-body-1">
                 {{ item }}
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT ME -->
+      <div class="mt-12 px-3 md:px-16">
+        <div class="grid grid-cols-12 border-2 border-white border-opacity-10 rounded-3xl">
+          <div class="col-span-4">
+            <div class="border-12 border-onSurface rounded-l-3xl rounded-b-none">
+              <div class="bg-onSurface">
+                <img class="rounded-3xl object-cover w-full" src="../assets/img/shawn-mahbub.png" alt="shawn mahbub image">
+              </div>
+            </div>
+          </div>
+          <div class="col-span-8">
+            <div class="p-6 rounded-r-3xl h-full">
+              <div class="grid place-content-between h-full">
+              <div class="flex gap-6 text-button">
+                <div>Info</div>
+                <div>Certifications</div>
+                <div>Contributions</div>
+              </div>
+              <div>hi, it’s shawn mahbub</div>
+              <div>
+               👨‍🎨 I’m a result-oriented UX designer who wants to solve complex problems in simple solutions possible. I’m compulsive about design thinking, process efficiency, visual systems, grids & guides during the daytime. At night, I dream about typography & lettering.  I've led the design and development solutions by building design systems to benefits the fortune of 10+ companies for 1+ years to generate a healthy revenue stream during my working time for their business.
+              </div>
+              <div>Using Tools: My Brain :), FlowMapp, Balsamiq, Material Design, Apple Human Interface Guideline, Figma, Adobe XD, Illustrator, Photoshop, or any kind of tools as I need in situations of work.</div>
+              <div>Let’s be friends</div>
+              <div class="flex gap-4 cursor-pointer">
+                <div class="circle">
+                  <div class="flex items-center justify-center h-full">
+                    <img src="../assets/img/linkedin.svg" alt="">
+                  </div>
+                </div>
+                <div class="circle">
+                  <div class="flex items-center justify-center h-full">
+                    <img src="../assets/img/behance.svg" alt="">
+                  </div>
+                </div>
+                <div class="circle">
+                  <div class="flex items-center justify-center h-full">
+                    <img src="../assets/img/instagram.svg" alt="">
+                  </div>
+                </div>
+                <div class="circle">
+                  <div class="flex items-center justify-center h-full">
+                    <img src="../assets/img/dribbble.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="w-5/6">
+                  <input type="text" placeholder="Write your email to hire me" class="w-full py-3 px-4 border-transparent bg-onSurface focus:outline-none focus:border-transparent rounded">
+                </div>
+                <div class="w-1/6">
+                  <button class="btn-primary">
+                    Hire Me
+                  </button>
+                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
