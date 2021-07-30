@@ -8,9 +8,6 @@
     /* .text-h1 {
       @apply font-raleway font-extrabold text-5xl leading-none tracking-tight;
     }
-    .text-h2 {
-      @apply font-raleway font-semibold text-4xl leading-snug tracking-tight;
-    }
     .text-h3 {
       @apply font-raleway font-bold text-3xl leading-9 tracking-normal;
     }
@@ -41,6 +38,24 @@
     .text-button {
       @apply font-inter font-semibold text-sm tracking-widest uppercase;
     }
+    .text-display-2 {
+      @apply font-inter text-6xl font-bold leading-tight tracking-tight;
+    }
+    .text-subheading-1 {
+      @apply font-inter text-lg leading-7 tracking-wide;
+    }
+    .text-subheading-2 {
+      @apply font-inter font-normal text-base leading-6 tracking-wide;
+    }
+    .text-h2 {
+      @apply font-inter font-bold text-4xl leading-tight tracking-wide;
+    }
+    .text-body-1 {
+      @apply font-inter font-normal text-base leading-6 tracking-wide;
+    }
+    .text-h4 {
+      @apply font-inter font-medium text-xl leading-7 tracking-normal;
+    }
   }
 }
 
@@ -59,6 +74,12 @@
 
 @layer components {
   .default-text {
-    @apply antialiased font-inter overflow-hidden;
+    @apply antialiased font-inter overflow-hidden max-w-screen-2xl mx-auto;
+  }
+  .btn-secondary {
+    @apply bg-onSurface py-3 px-6 text-button text-white rounded;
+  }
+  .btn-primary {
+    @apply bg-secondary py-3 px-6 text-button text-white rounded;
   }
 }

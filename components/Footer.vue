@@ -1,6 +1,5 @@
 <template>
-  <div class="h-96 bg-onSurface">
-  </div>
+  <div class="h-96 bg-onSurface" />
 </template>
 
 <script>

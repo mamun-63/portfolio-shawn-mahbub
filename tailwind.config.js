@@ -20,6 +20,13 @@ module.exports = {
       },
       height: {
         18: ['72px']
+      },
+      borderWidth: {
+        12: '12px',
+        24: '24px'
+      },
+      boxShadow: {
+        card: 'rgba(3, 187, 87, 0.24)'
       }
     }
   },
