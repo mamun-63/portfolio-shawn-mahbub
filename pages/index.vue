@@ -137,23 +137,25 @@
         </div>
       </div>
       <div class="mt-12 px-3 md:px-16">
-        <div class="grid grid-cols-3 gap-6">
-          <div v-for="item in items" :key="item" class="border-2 border-white border-opacity-10 rounded-xl p-4">
-            <div class="mb-6 flex">
-              <div class="mr-5">
-                <img class="rounded-full h-12 w-12 object-cover" src="../assets/img/profile.png" alt="avatar">
-              </div>
-              <div>
-                <div class="text-subheading-1 font-medium">
-                  Ronald Richards
+        <div class="masonry before:box-inherit after:box-inherit">
+          <div v-for="item in items" :key="item">
+            <div class="break-inside mb-6 border-2 border-white border-opacity-10 rounded-xl p-4">
+              <div class="mb-6 flex">
+                <div class="mr-5">
+                  <img class="rounded-full h-12 w-12 object-cover" src="../assets/img/profile.png" alt="avatar">
                 </div>
-                <div class="text-subheading-2 text-secondary">
-                  Software Developer
+                <div>
+                  <div class="text-subheading-1 font-medium">
+                    Ronald Richards
+                  </div>
+                  <div class="text-subheading-2 text-secondary">
+                    Software Developer
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="text-body-1">
-              {{ item }}
+              <div class="text-body-1">
+                {{ item }}
+              </div>
             </div>
           </div>
         </div>
@@ -167,11 +169,12 @@ export default {
   data () {
     return {
       items: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf'
+        '1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi',
+        '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf ',
+        '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
+        '4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
+        '5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf',
+        '6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mauris sed egestas at felis, morbi at dignissim malesuada. Mauris ac convalli dfklei f jlsi fi jflkjkl if ilkj klsf'
       ]
     }
   }

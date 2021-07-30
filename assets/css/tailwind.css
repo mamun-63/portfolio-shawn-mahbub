@@ -5,6 +5,13 @@
 
 @layer utilities {
   @responsive {
+    .masonry {
+      column-count: 3;
+      column-gap: 1.5em;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
     /* .text-h1 {
       @apply font-raleway font-extrabold text-5xl leading-none tracking-tight;
     }
