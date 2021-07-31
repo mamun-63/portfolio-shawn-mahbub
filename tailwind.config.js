@@ -19,7 +19,8 @@ module.exports = {
         secondary: '#19A463'
       },
       height: {
-        18: ['72px']
+        18: ['72px'],
+        156: ['624px']
       },
       borderWidth: {
         12: '12px',
@@ -33,5 +34,7 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+  ]
 }

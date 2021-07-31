@@ -15,9 +15,6 @@
     /* .text-h1 {
       @apply font-raleway font-extrabold text-5xl leading-none tracking-tight;
     }
-    .text-h3 {
-      @apply font-raleway font-bold text-3xl leading-9 tracking-normal;
-    }
     .text-h4 {
       @apply font-raleway font-semibold text-2xl leading-8 tracking-normal;
     }
@@ -62,6 +59,9 @@
     }
     .text-h4 {
       @apply font-inter font-medium text-xl leading-7 tracking-normal;
+    }
+    .text-h3 {
+      @apply font-inter font-bold text-2xl leading-8 tracking-normal;
     }
   }
 }
