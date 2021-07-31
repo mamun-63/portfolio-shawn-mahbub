@@ -17,10 +17,18 @@
         </div>
         <div>
           <div class="flex gap-6 cursor-pointer text-button">
-            <div>Works</div>
-            <div>Blogs</div>
-            <div>Kind Words</div>
-            <div>About Me</div>
+            <div class="hover:text-secondary">
+              Works
+            </div>
+            <div class="hover:text-secondary">
+              Blogs
+            </div>
+            <div class="hover:text-secondary">
+              Kind Words
+            </div>
+            <div class="hover:text-secondary">
+              About Me
+            </div>
           </div>
         </div>
         <div>
@@ -58,7 +66,7 @@ export default {}
 
 <style>
   .circle {
-    @apply border border-white rounded-full h-8 w-8;
+    @apply border border-white rounded-full h-8 w-8 hover:bg-secondary;
   }
   .norman {
     @apply font-extralight text-sm;

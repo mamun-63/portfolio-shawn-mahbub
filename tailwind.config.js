@@ -27,7 +27,7 @@ module.exports = {
         24: '24px'
       },
       boxShadow: {
-        card: 'rgba(3, 187, 87, 0.24)'
+        card: '24px 24px 250px 12px rgba(3, 187, 87, 0.24)'
       }
     }
   },
