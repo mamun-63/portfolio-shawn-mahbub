@@ -90,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center py-12 px-3 md:px-16">
+      <div class="text-center py-12 px-3 md:px-32">
         <div class="mb-12 text-button text-secondary">
           few clients that I worked for
         </div>
@@ -183,7 +183,7 @@
             </div>
           </div>
         </div>
-        <div class="mb-12 px-3 md:px-16">
+        <div class="mb-12 px-3 md:px-32">
           <div class="grid grid-cols-3 gap-6">
             <div v-for="i in 3" :key="i" class="border-2 border-white border-opacity-10 rounded-3xl">
               <div class="border-12 border-onSurface rounded-t-3xl rounded-b-none">
@@ -219,7 +219,7 @@
             5 selected works across 5 fields
           </div>
         </div>
-        <div class="mt-12 px-3 md:px-16">
+        <div class="mt-12 px-3 md:px-32">
           <div class="grid grid-cols-12 border-2 border-white border-opacity-10 rounded-3xl">
             <div class="col-span-5">
               <div class="border-12 border-onSurface rounded-l-3xl rounded-b-none">
@@ -261,10 +261,10 @@
             Over 1500 restaurants, managers, and owners use FoodQo
           </div>
         </div>
-        <div class="mt-12 px-3 md:px-16">
+        <div class="mt-12 px-3 md:px-32">
           <div class="masonry before:box-inherit after:box-inherit">
             <div v-for="item in items" :key="item">
-              <div class="break-inside mb-6 border-2 border-white border-opacity-10 rounded-xl p-4">
+              <div class="break-inside hover:bg-onSurface hover:shadow-3xl hover:border-opacity-0 select-none mb-6 border-2 border-white border-opacity-10 rounded-xl p-4">
                 <div class="mb-6 flex">
                   <div class="mr-5">
                     <img class="rounded-full h-12 w-12 object-cover" src="../assets/img/profile.png" alt="avatar">
@@ -297,17 +297,17 @@
               Over 1500 restaurants, managers, and owners use FoodQo
             </div>
           </div>
-          <div class="mt-12 px-3 md:px-16 mb-12">
+          <div class="mt-12 px-3 md:px-32 mb-12">
             <div class="grid grid-cols-12 border-2 border-white border-opacity-10 rounded-3xl">
               <div v-if="!showMore" class="col-span-4">
                 <div class="border-12 border-onSurface rounded-l-3xl rounded-b-none">
                   <div class="bg-onSurface">
-                    <img class="rounded-3xl h-156 object-cover w-full" src="../assets/img/shawn-mahbub.png" alt="shawn mahbub image">
+                    <img style="height: 524px" class="rounded-3xl object-cover w-full" src="../assets/img/shawn-mahbub.png" alt="shawn mahbub image">
                   </div>
                 </div>
               </div>
-              <div :class="{'col-span-12': shoeMore}" class="col-span-8 bg-primary">
-                <div class="p-6 rounded-r-3xl h-full">
+              <div :class="{'col-span-12': shoeMore}" class="col-span-8 bg-primary rounded-r-3xl">
+                <div class="p-6 h-full">
                   <div class="grid place-content-between h-full">
                     <div>
                       <div class="flex justify-between text-button mb-8">
@@ -328,9 +328,9 @@
                         <div class="text-subheading-1 font-normal mb-6">
                           👨‍🎨 I’m a result-oriented UX designer who wants to solve complex problems in simple solutions possible. I’m compulsive about design thinking, process efficiency, visual systems, grids & guides during the daytime. At night, I dream about typography & lettering.  I've led the design and development solutions by building design systems to benefits the fortune of 10+ companies for 1+ years to generate a healthy revenue stream during my working time for their business.
                         </div>
-                        <div class="text-subheading-1 font-normal">
+                        <!-- <div class="text-subheading-1 font-normal">
                           Using Tools: My Brain :), FlowMapp, Balsamiq, Material Design, Apple Human Interface Guideline, Figma, Adobe XD, Illustrator, Photoshop, or any kind of tools as I need in situations of work.
-                        </div>
+                        </div> -->
                       </div>
                       <div v-if="clickedTab==2">
                         <div class="mb-3">
@@ -387,8 +387,8 @@
                         </div>
                       </div>
                     </div>
-                    <div v-if="!showMore">
-                      <div v-if="clickedTab==1">
+                    <div v-if="clickedTab==1">
+                      <div>
                         <div class="text-button text-secondary mb-3">
                           Let’s be friends
                         </div>
@@ -416,10 +416,10 @@
                         </div>
                       </div>
                       <div class="flex gap-6">
-                        <div class="w-5/6">
+                        <div class="w-4/6">
                           <input type="text" placeholder="Write your email to hire me" class="w-full py-3 px-4 border-transparent bg-onSurface focus:outline-none focus:border-transparent rounded">
                         </div>
-                        <div class="w-1/6">
+                        <div class="w-2/6">
                           <button class="btn-primary">
                             Hire Me
                           </button>
@@ -473,7 +473,7 @@ export default {
 
 <style>
 .bg-hero {
-  background-image: url('../assets/img/ellipse.svg');
+  /* background-image: url('../assets/img/ellipse.svg'); */
 }
 .bg-about {
   background-image: url('../assets/img/ellipse-about.svg');

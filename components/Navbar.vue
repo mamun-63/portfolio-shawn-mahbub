@@ -66,7 +66,7 @@ export default {}
 
 <style>
   .circle {
-    @apply border border-white rounded-full h-8 w-8 hover:bg-secondary;
+    @apply border border-white rounded-full h-8 w-8 hover:bg-secondary hover:border-opacity-0;
   }
   .norman {
     @apply font-extralight text-sm;
