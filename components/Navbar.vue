@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="bg-onSurface text-white">
+    <div class="bg-onSurface text-white fixed top-0 inset-x-0 z-10">
       <div class="flex justify-around items-center default-text px-3 md:px-16 h-18">
         <div>
           <div class="flex">
             <img class="mr-3" src="../assets/img/logo-icon.svg" alt="logo">
-            <div>
+            <div class="cursor-default">
               <div class="shawn">
                 shawnm.ux
               </div>
@@ -64,10 +64,7 @@
 export default {}
 </script>
 
-<style>
-  .circle {
-    @apply border border-white rounded-full h-8 w-8 hover:bg-secondary hover:border-opacity-0;
-  }
+<style scoped>
   .norman {
     @apply font-extralight text-sm;
     letter-spacing: 0.3em;

@@ -89,4 +89,7 @@
   .btn-primary {
     @apply bg-secondary py-3 px-6 text-button text-white rounded;
   }
+  .circle {
+    @apply border border-white rounded-full h-8 w-8 hover:bg-secondary hover:border-opacity-0;
+  }
 }

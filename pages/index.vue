@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary text-white pt-12">
+  <div class="bg-primary text-white">
     <div class="default-text">
       <div class="bg-hero bg-contain bg-no-repeat bg-right">
         <div class="text-center">
@@ -306,8 +306,8 @@
                   </div>
                 </div>
               </div>
-              <div :class="{'col-span-12': shoeMore}" class="col-span-8 bg-primary rounded-r-3xl">
-                <div class="p-6 h-full">
+              <div :class="{'col-span-12': showMore, 'col-span-8': !showMore}">
+                <div :class="{'rounded-l-3xl': showMore}" class="p-6 h-full bg-primary rounded-r-3xl">
                   <div class="grid place-content-between h-full">
                     <div>
                       <div class="flex justify-between text-button mb-8">
@@ -317,7 +317,7 @@
                             <div v-if="tab.id==clickedTab" class="border border-secondary mt-2" />
                           </div>
                         </div>
-                        <div class="text-button text-secondary cursor-pointer" @click="onShowMore(clickedTab)">
+                        <div v-if="clickedTab !== 1" class="text-button text-secondary cursor-pointer" @click="onShowMore(clickedTab)">
                           {{ showMore ? 'Show Less' : 'Show More' }}
                         </div>
                       </div>
@@ -334,7 +334,7 @@
                       </div>
                       <div v-if="clickedTab==2">
                         <div class="mb-3">
-                          <div class="grid grid-cols-2 gap-6">
+                          <div :class="{'grid-cols-3': showMore}" class="grid grid-cols-2 gap-6">
                             <div v-for="i in 2" :key="i" class="border-2 border-white border-opacity-10 rounded-3xl">
                               <div class="border-12 border-onSurface rounded-t-3xl rounded-b-none">
                                 <div class="bg-onSurface">
@@ -361,7 +361,7 @@
                       </div>
                       <div v-if="clickedTab==3">
                         <div class="mb-3">
-                          <div class="grid grid-cols-2 gap-6">
+                          <div :class="{'grid-cols-3': showMore}" class="grid grid-cols-2 gap-6">
                             <div v-for="i in 1" :key="i" class="border-2 border-white border-opacity-10 rounded-3xl">
                               <div class="border-12 border-onSurface rounded-t-3xl rounded-b-none">
                                 <div class="bg-onSurface">
@@ -416,10 +416,10 @@
                         </div>
                       </div>
                       <div class="flex gap-6">
-                        <div class="w-4/6">
-                          <input type="text" placeholder="Write your email to hire me" class="w-full py-3 px-4 border-transparent bg-onSurface focus:outline-none focus:border-transparent rounded">
+                        <div class="flex-grow w-full">
+                          <input type="text" placeholder="Write your email to hire me" class="w-full text-sm tracking-widest uppercase py-3 px-4 border border-white border-opacity-10 bg-onSurface focus:outline-none focus:border-transparent focus:ring-1 focus:ring-secondary rounded">
                         </div>
-                        <div class="w-2/6">
+                        <div class="flex-none">
                           <button class="btn-primary">
                             Hire Me
                           </button>
@@ -461,7 +461,9 @@ export default {
   methods: {
     selectTab (id) {
       this.clickedTab = id
-      this.showMore = false
+      if (this.clickedTab === 1) {
+        this.showMore = false
+      }
     },
     onShowMore (id) {
       console.log('clicked tab for show more ', id)
