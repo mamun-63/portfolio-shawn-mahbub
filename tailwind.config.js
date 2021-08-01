@@ -18,6 +18,9 @@ module.exports = {
         onSurface: '#192533',
         secondary: '#19A463'
       },
+      spacing: {
+        30: '120px'
+      },
       height: {
         18: ['72px'],
         156: ['624px']
