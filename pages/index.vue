@@ -2,7 +2,7 @@
   <div>
     <!-- NAVBAR -->
     <div class="bg-onSurface text-white fixed top-0 inset-x-0 z-10">
-      <div class="flex justify-around items-center default-text px-3 md:px-16 h-18 relative">
+      <div class="flex justify-around items-center default-text px-3 md:px-16 h-18">
         <div>
           <div class="flex">
             <img class="mr-3" src="../assets/img/logo-icon.svg" alt="logo">
@@ -58,7 +58,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-primary text-white absolute pt-30">
+    <div class="bg-primary text-white pt-30">
       <div class="default-text">
         <!-- HERO SECTION -->
         <div class="bg-hero bg-contain bg-no-repeat bg-right">
@@ -86,7 +86,6 @@
               Currently Working
             </div>
           </div>
-          <!-- WORKS -->
           <div class="mb-12 w-4/6 mx-auto shadow-card border-2 border-white border-opacity-10 rounded-3xl">
             <div class="border-24 border-onSurface rounded-t-3xl rounded-b-none">
               <div class="bg-onSurface">
@@ -131,7 +130,7 @@
                         <div class="text-secondary text-button mb-2">
                           Starting Date
                         </div>
-                        <div class="text-h4">
+                        <div class="text-h4 font-medium">
                           24th June, 2021
                         </div>
                       </div>
@@ -139,7 +138,7 @@
                         <div class="text-secondary text-button mb-2">
                           Client
                         </div>
-                        <div class="text-h4">
+                        <div class="text-h4 font-medium">
                           Somoy TV
                         </div>
                       </div>
@@ -226,7 +225,7 @@
                         <div class="text-secondary text-button mb-2">
                           Starting Date
                         </div>
-                        <div class="text-h4">
+                        <div class="text-h4 font-medium">
                           24th June, 2021
                         </div>
                       </div>
@@ -234,7 +233,7 @@
                         <div class="text-secondary text-button mb-2">
                           Client
                         </div>
-                        <div class="text-h4">
+                        <div class="text-h4 font-medium">
                           Somoy TV
                         </div>
                       </div>
@@ -494,9 +493,9 @@
             </div>
           </div>
         </div>
-        <!-- FOOTER -->
-        <Footer />
       </div>
+      <!-- FOOTER -->
+      <Footer />
     </div>
   </div>
 </template>
@@ -526,6 +525,7 @@ export default {
   },
   methods: {
     onClick () {
+      this.$router.push('/')
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
     },
@@ -536,7 +536,6 @@ export default {
       }
     },
     onShowMore (id) {
-      console.log('clicked tab for show more ', id)
       this.showMore = !this.showMore
     }
   }

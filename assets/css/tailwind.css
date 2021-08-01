@@ -61,7 +61,7 @@
       @apply font-inter font-normal text-base leading-6 tracking-wide;
     }
     .text-h4 {
-      @apply font-inter font-medium text-xl leading-7 tracking-normal;
+      @apply font-inter text-xl leading-7 tracking-normal;
     }
     .text-h3 {
       @apply font-inter font-bold text-2xl leading-8 tracking-normal;
@@ -93,7 +93,7 @@
     @apply bg-secondary py-3 px-6 text-button text-white rounded;
   }
   .input-outlined {
-    @apply text-sm tracking-widest uppercase py-3 px-4 border border-white border-opacity-10 bg-onSurface focus:outline-none focus:border-transparent focus:ring-1 focus:ring-secondary rounded;
+    @apply text-sm tracking-widest py-3 px-4 border border-white border-opacity-10 bg-onSurface focus:outline-none focus:border-transparent focus:ring-1 focus:ring-secondary rounded;
   }
   .circle {
     @apply border border-white rounded-full h-8 w-8 hover:bg-secondary hover:border-opacity-0;
