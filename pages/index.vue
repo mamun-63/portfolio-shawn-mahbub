@@ -33,27 +33,36 @@
           </div>
         </div>
         <div>
-          <div class="flex gap-4 cursor-pointer">
-            <div class="circle">
-              <div class="flex items-center justify-center h-full">
-                <img src="../assets/img/linkedin.svg" alt="">
+          <!-- Should to be Component -->
+          <div class="flex gap-4">
+            <a href="https://www.linkedin.com/in/shawnmux" target="_blank" rel="noopener norefferer">
+              <div class="circle">
+                <div class="flex items-center justify-center h-full">
+                  <img src="../assets/img/linkedin.svg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="circle">
-              <div class="flex items-center justify-center h-full">
-                <img src="../assets/img/behance.svg" alt="">
+            </a>
+            <a href=" https://www.behance.net/shawnmux" target="_blank" rel="noopener norefferer">
+              <div class="circle">
+                <div class="flex items-center justify-center h-full">
+                  <img src="../assets/img/behance.svg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="circle">
-              <div class="flex items-center justify-center h-full">
-                <img src="../assets/img/instagram.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/shawnm.ux" target="_blank" rel="noopener norefferer">
+              <div class="circle">
+                <div class="flex items-center justify-center h-full">
+                  <img src="../assets/img/instagram.svg" alt="">
+                </div>
               </div>
-            </div>
-            <div class="circle">
-              <div class="flex items-center justify-center h-full">
-                <img src="../assets/img/dribbble.svg" alt="">
+            </a>
+            <a href="https://dribbble.com/shawnmux" target="_blank" rel="noopener norefferer">
+              <div class="circle">
+                <div class="flex items-center justify-center h-full">
+                  <img src="../assets/img/dribbble.svg" alt="">
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -75,9 +84,11 @@
               <span class="font-bold">@UX Collective</span>
             </div>
             <div class="mt-6 flex justify-center gap-4">
-              <button class="btn-secondary">
-                Get Resume
-              </button>
+              <a href="https://drive.google.com/file/d/11GZrutxH3VQczpPCM0B4dFiKSC8dbzNs/view" target="_blank" rel="noopener norefferer">
+                <button class="btn-secondary">
+                  Get Resume
+                </button>
+              </a>
               <button class="btn-primary">
                 Hire Me
               </button>
@@ -347,7 +358,7 @@
           </div>
         </div>
         <!-- ABOUT ME -->
-        <div id="about" class="bg-about bg-contain bg-no-repeat bg-left">
+        <div id="about">
           <div class="pb-12">
             <div class="text-center pt-12">
               <div class="text-display-2 text-secondary mb-1">
@@ -362,7 +373,7 @@
                 <div v-if="!showMore" class="col-span-4">
                   <div class="border-12 border-onSurface rounded-l-3xl rounded-b-none">
                     <div class="bg-onSurface">
-                      <img style="height: 524px" class="rounded-3xl object-cover w-full" src="../assets/img/shawn-mahbub.png" alt="shawn mahbub image">
+                      <img style="height: 540px" class="rounded-3xl object-cover w-full" src="../assets/img/shawn-mahbub.png" alt="shawn mahbub image">
                     </div>
                   </div>
                 </div>
@@ -386,11 +397,8 @@
                             hi, it’s shawn mahbub
                           </div>
                           <div class="text-subheading-1 font-normal mb-6">
-                            👨‍🎨 I’m a result-oriented UX designer who wants to solve complex problems in simple solutions possible. I’m compulsive about design thinking, process efficiency, visual systems, grids & guides during the daytime. At night, I dream about typography & lettering.  I've led the design and development solutions by building design systems to benefits the fortune of 10+ companies for 1+ years to generate a healthy revenue stream during my working time for their business.
+                            👨‍🎨 I’m a result-oriented UX designer who wants to solve complex problems in simple solutions possible. I’m compulsive about design thinking, process efficiency, visual systems, grids & guides during the daytime. At night, I dream about typography & lettering.  I've led the design and development solutions by building design systems to benefits the fortune of 10+ companies for 1+ years to generate a healthy revenue stream. Besides solving problems and design I am a Barca lover and I never missed an opportunity to watch Bangladesh cricket matches. I would love to drink cream latte.
                           </div>
-                        <!-- <div class="text-subheading-1 font-normal">
-                          Using Tools: My Brain :), FlowMapp, Balsamiq, Material Design, Apple Human Interface Guideline, Figma, Adobe XD, Illustrator, Photoshop, or any kind of tools as I need in situations of work.
-                        </div> -->
                         </div>
                         <div v-if="clickedTab==2">
                           <div class="mb-3">
@@ -452,27 +460,35 @@
                           <div class="text-button text-secondary mb-3">
                             Let’s be friends
                           </div>
-                          <div class="flex gap-4 cursor-pointer mb-6">
-                            <div class="circle">
-                              <div class="flex items-center justify-center h-full">
-                                <img src="../assets/img/linkedin.svg" alt="">
+                          <div class="flex gap-4 mb-6">
+                            <a href="https://www.linkedin.com/in/shawnmux" target="_blank" rel="noopener norefferer">
+                              <div class="circle">
+                                <div class="flex items-center justify-center h-full">
+                                  <img src="../assets/img/linkedin.svg" alt="">
+                                </div>
                               </div>
-                            </div>
-                            <div class="circle">
-                              <div class="flex items-center justify-center h-full">
-                                <img src="../assets/img/behance.svg" alt="">
+                            </a>
+                            <a href=" https://www.behance.net/shawnmux" target="_blank" rel="noopener norefferer">
+                              <div class="circle">
+                                <div class="flex items-center justify-center h-full">
+                                  <img src="../assets/img/behance.svg" alt="">
+                                </div>
                               </div>
-                            </div>
-                            <div class="circle">
-                              <div class="flex items-center justify-center h-full">
-                                <img src="../assets/img/instagram.svg" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/shawnm.ux" target="_blank" rel="noopener norefferer">
+                              <div class="circle">
+                                <div class="flex items-center justify-center h-full">
+                                  <img src="../assets/img/instagram.svg" alt="">
+                                </div>
                               </div>
-                            </div>
-                            <div class="circle">
-                              <div class="flex items-center justify-center h-full">
-                                <img src="../assets/img/dribbble.svg" alt="">
+                            </a>
+                            <a href="https://dribbble.com/shawnmux" target="_blank" rel="noopener norefferer">
+                              <div class="circle">
+                                <div class="flex items-center justify-center h-full">
+                                  <img src="../assets/img/dribbble.svg" alt="">
+                                </div>
                               </div>
-                            </div>
+                            </a>
                           </div>
                         </div>
                         <div class="flex gap-6">
@@ -542,7 +558,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .norman {
   @apply font-extralight text-sm;
   letter-spacing: 0.3em;
@@ -550,11 +566,5 @@ export default {
 .shawn {
   @apply font-teko text-2xl tracking-wider;
   line-height: 24px;
-}
-.bg-hero {
-  /* background-image: url('../assets/img/ellipse.svg'); */
-}
-.bg-about {
-  background-image: url('../assets/img/ellipse-about.svg');
 }
 </style>

@@ -9,6 +9,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        beetle:
+          "url('https://d2u0ktu8omkpf6.cloudfront.net/6ff4a2e594db65cde86151276a1a09edfe990d062e15b137.jpg')"
+      },
       fontFamily: {
         inter: ['Inter'],
         teko: ['Teko']
